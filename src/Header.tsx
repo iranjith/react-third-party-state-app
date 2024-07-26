@@ -1,10 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
-import { useCart } from "./context/cartContext";
 import { useShoeStore } from "./store/shoestore";
 
 export default function Header() {
-  const { cart } = useCart();
-  const { user, logIn, logOut } = useShoeStore();
+  const { user, cart, logIn, logOut } = useShoeStore();
 
   return (
     <header>
