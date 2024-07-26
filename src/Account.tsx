@@ -1,7 +1,7 @@
-import { useUser } from "./context/userContext";
+import { useShoeStore } from "./store/shoestore";
 
 export function Account() {
-  const { user } = useUser();
+  const { user } = useShoeStore();
 
   return (
     <>
